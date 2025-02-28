@@ -14,3 +14,4 @@ df= data.frame(region = state.region,
                state_abbreviation = state.abb)|>
 inner_join(df,covid,by = "state")|>
 summarise("state","date")
+
